@@ -1,0 +1,1298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-left: 4.2rem;
+  transition: 0.5s;
+}
+
+
+/* banner stylings */
+.banner{
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #011b33;
+  z-index: 9;
+  opacity: 0.95;
+  text-align: center;
+}
+.ban{
+  padding-top: 14px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.ban a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* navigation stylings */
+nav{
+  position: sticky;
+  top: 0;
+  background-color: rgba(241,254,244,0.95);
+  border-bottom: 1px solid rgba(240,242,243,0.6);;
+  z-index: 4;
+  padding: 0 2rem 0 3.5rem;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* scroll change background */
+.white-nav-background{
+  background-color: rgb(255, 255, 255) !important;
+}
+.green-nav-background{
+  background-color: rgba(241,254,244,0.95) !important;
+}
+.blue-nav-background{
+  background-color: #eaf6fc !important;
+}
+.off-white-nav-background{
+  background-color: rgba(249,251,252,0.95) !important;
+}
+.red-nav-background{
+  background-color: white !important;
+}
+
+nav .logo{
+  margin-top: 4px;
+  width: 125px;
+  height: 22px;
+}
+
+.main-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown li i{
+  font-size: 11px;
+  margin-left: 2px;
+}
+.dropdown-section{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.dropdown-section ul{
+  list-style: none;
+  display: flex;
+  gap: 1.3rem;
+  margin: 0 1rem;
+}
+.dropdown-section ul li a{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #011b33;
+  transition: 0.5s;
+}
+.dropdown-section ul li a:hover{
+  color: #0ba4db;
+}
+
+.dropdown-content{
+  position: absolute;
+  top: 58px;
+  height: 0;
+  visibility: hidden;
+  /* display: none; */
+}
+.dropdown:hover .dropdown-content{
+display: block;
+visibility: visible;
+height: 100%;
+transform: translateY(-2px);
+transition: 0.5s !important;
+}
+
+/* major dropdown */
+.major{
+  width: 520px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(3,49,86,0.08);
+  border-radius: 6px;
+  color: #011b33;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  transition:ease-in-out 0.2s !important;
+}
+.major-left{
+  width: 65%;
+  padding: 2rem 1rem 1rem 1.5rem;
+  border: solid 1px rgba(0,0,0,0.04);
+}
+.major-left a {
+  display: flex;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.major-left a:hover h4{
+  color: #0ba4db;
+}
+.major-left a:hover .dp-img img{
+transform: scale(110%);
+}
+.major-left a .dp-img{
+  width: 50px;
+  margin-right: 10px;
+  height: 50px;
+  background-color: #011b33;
+  border-radius: 50%;
+  align-items: center;
+}
+.dp-img img{
+  width: 50px;
+  margin-right: 10px;
+  height: 50px;
+}
+.major-left h4{
+  line-height: 1.8rem;
+}
+.major-left p{
+  font-size: 14px;
+  line-height: 1.1rem;
+}
+
+.major-right{
+  width: 35%;
+  background-color: #F9FBFC;
+  border: solid 1px rgba(0,0,0,0.04);
+  border-left: 0px;
+  padding: 2rem 1rem 1rem 1.5rem;
+}
+.major-right ul{
+  display: block;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-weight: 600
+}
+.major-right ul a{
+  transition: 0s !important;
+}
+.major-right h6{
+  line-height: 1.2rem;
+}
+.back{
+  display: none;
+}
+
+/* minor dropdown */
+.minor{
+  width: 140px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(3,49,86,0.08);
+  border-radius: 6px;
+  color: #011b33;
+  font-size: 14px;
+  line-height: 1.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  transition:ease-in-out 0.2s !important;
+}
+.minor ul{
+  display: block;
+  padding: 1rem 0;
+}
+.minor ul a{
+  transition: 0s !important;
+}
+
+.nav-btn{
+  width: 250px;
+  height: 40px !important;
+}
+.countries{
+  width: 16px;
+  height: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.country{
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: -19px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(3,49,86,0.08);
+  border-radius: 6px;
+  transition:ease-in-out 0.2s !important;
+  padding: 1rem 1rem;
+}
+.country a{
+  text-decoration: none;
+  color: #011b33;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+.country ul li{
+  list-style: none;
+  display: flex;
+}
+.country ul li img{
+  width: 18px;
+}
+/* navigations toggler */
+.nav-toggle{
+  display: none;
+}
+
+
+/* end of navigations */
+
+
+
+/* First Section Stylings */
+.fst-section {
+  background-color: #f1fef4;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+/* Text Side Stylings */
+/* header */
+.header-text {
+  position: relative;
+  height: 100vh;
+  color: #011b33;
+  z-index: 1;
+  width: 650px;
+  padding-top: 14.2rem;
+}
+
+.header-text h1 {
+  font-size: 45px;
+  line-height: 3.5rem;
+  font-family: "Graphik", sans-serif;
+}
+.header-text p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 13px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+/* footer */
+.footer-text {
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 3rem;
+}
+.footer-line{
+  display: none;
+}
+.footer-left {
+  width: 500px;
+  line-height: 2rem;
+}
+.footer-right {
+  z-index: 1;
+  width: 450px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+.footer-right p {
+  line-height: 1.6rem;
+}
+.footer-text p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #011b33;
+}
+.footer-images {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-1 {
+  width: 120px;
+}
+.footer-2 {
+  width: 70px;
+  height: 30px;
+}
+.footer-3 {
+  width: 50px;
+  height: 30px;
+}
+.footer-4 {
+  width: 150px;
+}
+
+/* Button Stylings */
+.btn {
+  cursor: pointer;
+  padding: 0 2rem;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #3bb75e;
+  transition: 0.5s;
+}
+.btn:hover{
+  transform: translateY(-1px);
+  background-color: #41aa5e;
+  box-shadow: 0 6px 2px -6px rgba(42,134,68,0.6);
+}
+.header-btn {
+  margin-top: 1.6rem;
+}
+.watch-ad {
+  border: none;
+  border-radius: 50%;
+  background-color: #0ba4db;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+}
+.footer-right:hover .watch-ad{
+  width: 38px;
+  height: 38px;
+  margin-left: 7px;
+  transition:ease-in 0.1s;
+} 
+.footer-right:hover .watch{
+  font-size: 15px
+}
+.watch{
+  color: white;
+}
+.ad{
+  display: none;
+}
+
+/* link Stylings */
+.header-link {
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #3bb75e;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* map stylings */
+.map-curve{
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 100%;
+  width: 55%;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+
+.map{
+  position: absolute;
+  left: -30%;
+  top: 0;
+  height: 100%;
+  transition: 2s;
+}
+
+/* End of First Section Stylings */
+
+
+
+
+
+
+
+/* Second Section Stylings */
+.snd-section {
+  background-color: white;
+  width: 100%;
+}
+/* Text side Stylings */
+/* Header Stylings` */
+.header-text2{
+  color: #011b33;
+  width: 700px;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+}
+.header-text2 h1 {
+  font-size: 42px;
+  line-height: 3.5rem;
+  font-family: "Graphik", sans-serif;
+}
+.header-text2 p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 9px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+/* main stylings */
+.main-side{
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.main-image{
+  width: 100%;
+}
+.main-img{
+  width: 100%;
+}
+.main-text{
+  color: #011b33;
+  width: 85%;
+  margin-left: 5rem;
+  transition: 0.8s;
+}
+.main-text h1{
+  font-size: 35px;
+  line-height: 3.5rem;
+  font-family: "Graphik", sans-serif;
+}
+.main-text p{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+margin-top: 9px;
+margin-bottom: 1rem;
+font-size: 19px;
+line-height: 2rem;
+}
+/* main list stylings */
+.main-list{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-list ul{
+  list-style: none;
+  line-height: 2.5rem;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+/* main link stylings */
+.main-text a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  padding-bottom: 2rem;
+  color: #3bb75e;
+}
+.main-text a i{
+  border: 1px solid #3bb75e;
+  border-radius: 50%;
+  text-align: center;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  margin-right: 6px;
+  transition: 0.5s;
+}
+.main-text a:hover i{
+  color: white;
+  background-color: #3bb75e;
+}
+/* checked stylings */
+.checked{
+  color: #3bb75e;
+  font-size: 14px;
+  background-color: #f1fef4;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 4px;
+}
+/* End of Second Section Stylings */
+
+
+
+
+/* Third Section Stylings */
+.trd-section{
+  width: 100%;
+  padding-top: 8rem;
+}
+.trd-side{
+  width: 100%;
+}
+.trd-text{
+  margin-left: 2rem;
+}
+.trd-text ul{
+  list-style: none;
+  line-height: 2.2rem;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+/* End of third section Stylings */
+
+
+
+
+/* Fourth section */
+.frt-section{
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.frt-gap{
+  margin-top: 4rem;
+}
+/* End of fourth section */
+
+
+
+
+/* Fifth Section */
+.fth-section{
+  width: 100%;
+  padding-bottom: 8rem;
+  background-color: #eaf6fc;
+  position: relative;
+}
+.fth-section::before{
+  background-image: url(./Images/checked-pattern-blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+.fth-heading{
+  position: relative;
+}
+.fth-header{
+  width: 700px;
+}
+/* grid side */
+.fth-grid{
+  margin-right: 4rem;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+}
+.grid-img{
+  width: 100px;
+  margin-bottom: 1rem;
+}
+.grid-container{
+  background-color: white;
+  padding: 1.8rem;
+  color: #011b33;
+  border-radius: 5px;
+}
+.grid-container h1{
+  font-size: 24px;
+  width: 100%;
+  line-height: 2rem;
+  font-family: "Graphik", sans-serif;
+}
+.grid-container p{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+margin-top: 9px;
+margin-bottom: 1rem;
+font-size: 16px;
+line-height: 1.6rem;
+}
+.grid-container a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  padding-bottom: 2rem;
+  color: #011b33;
+}
+
+.grid-container  a i{
+  border: 1px solid #3bb75e;
+  color: #3bb75e;
+  border-radius: 50%;
+  text-align: center;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  margin-right: 6px;
+  transition: 0.5s;
+}
+.grid-container a:hover i{
+  color: white;
+  background-color: #3bb75e;
+}
+/* End of fifth Section */
+
+
+
+
+/* sixth section */
+.sxt-section{
+  padding-bottom: 8rem;
+  width: 100%;
+}
+.sponsors{
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2rem 6.5rem;
+}
+.sponsors-images{
+  display: flex;
+  justify-content: space-between;
+}
+.sponsors img{
+  width: 100px;
+}
+/* end of sixth section */
+
+
+
+
+/* seventh section */
+.sth-section{
+  width: 100%;
+  padding-bottom: 8rem;
+  background-color: #F9FBFC;
+}
+.sth-section::before{
+  background-image: url(./Images/circular-pattern.png);
+  background-repeat: no-repeat;
+  background-position: 800px 15px;
+  background-size: 46rem;
+  filter: hue-rotate(800deg) invert(0.4);
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+.sth-header{
+  position: relative;
+}
+/* partnership section */
+.partnership{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 2.2rem;
+  align-items: center;
+}
+.partnership h1{
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.partnership p{
+  margin: 0;
+  font-size: 13px;
+  line-height: normal;
+}
+.ptr-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.grid-again{
+  width: 40px;
+  height: 40px;
+}
+/* end of seventh section */
+
+
+/* eight section */
+.eth-section{
+  width: 100%;
+  position: relative;
+  padding-bottom: 6rem;
+}
+.eth-section::before{
+  background-image: url(./Images/curved-pattern.png);
+  background-repeat: no-repeat;
+  background-position: 0 35px;
+  background-size: 85rem;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.eth-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  position: relative;
+}
+.header-btn2 {
+margin-top: 6rem;
+margin-right: 4rem;
+}
+/* end of eight section */
+
+/* drop section */
+.grided-side{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  color: #011b33;
+  margin: 0 1rem;
+}
+.grided-side h1{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 2.4rem;
+}
+.grided-side i{
+  display: none;
+}
+.grided-side ul{
+  list-style: none;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.grided-side ul li a{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #011b33;
+  transition: 0.5s;
+}
+.grided-side ul li a:hover{
+  color: #0ba4db;
+}
+.excess{
+  margin-top: 1.8rem;
+}
+/* end of drop section */
+
+/* contact-section */
+.grided-side ul li{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #011b33;
+}
+.contact ul li a{
+  color: #0ba4db;
+  font-weight: 400;
+  transition: 0.8s;
+}
+.contact ul li a:hover{
+  color: rgb(0, 94, 189);
+}
+hr{
+  border: 1px solid rgba(0,0,0,0.05);
+  margin: 4rem 4rem;
+}
+.contact-section{
+  padding-bottom: 8rem;
+}
+.social-icons i{
+  font-size: 25px;
+  line-height: 2rem;
+  margin-right: 12px;
+  color: rgb(61, 94, 105);
+  transition: 0.5s;
+}
+.social-icons i:hover{
+  color: #011b33;
+}
+/* end of contact section */
+
+
+
+
+
+
+
+
+
+@media (max-width: 1120px) {
+  nav{
+    padding: 0 1rem;
+  }
+}
+
+
+/* ----- Large Screen Stylings ----- */
+@media (max-width: 1070px) {
+  .container {
+    padding-left: 1rem;
+  }
+  .main-nav{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(241,254,244,0.95);
+    display: none;
+  }
+  .move-main-nav{
+    right: 100%;
+  }
+  .show-main-nav{
+    display: block;
+  }
+  .dropdown-section{
+    display: block;
+    margin-top: 10px;
+  }
+  .dropdown li{
+    position: relative;
+  }
+  .dropdown li i{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    transform: rotate(-90deg);
+  }
+  .dropdown-section ul{
+    display: block;
+    line-height: 2.3rem;
+  }
+  .countries{
+    display: none;
+  }
+  .dropdown-section ul .special{
+    color: #3bb75e;
+  }
+  .dropdown-section ul .special:hover{
+    color: #3bb75e;
+  }
+
+  .nav-btn{
+    width: 97%;
+    margin: 0.7rem 1rem;
+  }
+
+  .dropdown-content{
+    transform: translateY(0px) !important;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    visibility: visible;
+    z-index: 2;
+  }
+  .except{
+    display: none;
+  }
+  .remove-side-content{
+    left: 100% !important;
+  }
+  .show-side-content{
+    left: 0;
+  }
+  .major{
+    display: block;
+    background-color: rgba(241,254,244,0.95);
+    box-shadow: none;
+  }
+
+  .major-left{
+    width: 100%;
+    border: none;
+    padding: 0rem 1rem;
+    padding-bottom: 10px;
+  }
+  .major-left a{
+    margin-bottom: 0.5rem;
+  }
+  .major-left .dp-img{
+    display: none;
+  }
+  .major-left p{
+    display: none;
+  }
+  .major-right{
+    width: 100%;
+    border: none;
+    padding-left: 1rem;
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  .minor{
+    display: block;
+    background-color: rgba(241,254,244,0.95);
+    box-shadow: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .minor ul{
+    padding: 0 !important;
+  }
+  .back{
+    cursor: pointer;
+    display: block;
+    padding: 1rem 0 0.8rem 1rem;
+    color: #55717b;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  }
+  .back i{
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  
+
+
+
+  .nav-toggle{
+    display: block;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .nav-toggle span{
+    background-color: rgba(1,27,51,0.95);
+    display: block;
+    height: 0.17rem;
+    margin-bottom: 0.25em;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    width: 1.25em;
+  }
+  .nav-toggle-active span:first-child{
+    top: 0.400em;
+    transform: rotate(45deg);
+  }
+  .nav-toggle-active span:nth-child(2){
+    opacity: 0;
+  }
+  .nav-toggle-active span:last-child{
+    margin-bottom: 0;
+    top: -0.400em;
+    transform: rotate(-45deg);
+  }
+}  
+
+
+
+/* ----- Tab Screen Stylings ----- */
+@media (max-width: 920px) {
+  .header-text {
+    height: 92vh;
+  }
+  .footer-left {
+    width: 250px;
+  }
+  .footer-images{
+    display: block;
+  }
+  .header-text2{
+    padding-top: 6rem;
+  }
+  .main-text{
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .main-list{
+    padding-right: 1rem;
+  }
+  .header-text2{
+    width: 100%;
+  }
+  .fth-section{
+    padding-bottom: 6rem;
+  }
+  .sxt-section{
+    padding-bottom: 6rem !important;
+  }
+  .sth-section{
+    padding-bottom: 6rem;
+  }
+  .contact-section{
+    padding-bottom: 6rem;
+  }
+}
+
+
+
+/* ----- Mobile Screen Stylings ----- */
+@media (max-width: 600px) {
+  .header-text {
+    height: 70vh;
+    width: 100%;
+    padding-top: 8.2rem;
+  }
+  .header-text h1 {
+    font-size: 32px;
+    line-height: 2.3rem;
+  }
+  .header-text p {
+    font-size: 19px;
+    line-height: 1.5rem;
+    margin-top: 10px;
+  }
+  .footer-text{
+    display: block;
+  }
+  .footer-line{
+    display: block;
+    margin: 1.5rem 0;
+  }
+  .footer-text p {
+    font-size: 14px;
+  }
+  .footer-1 {
+    width: 80px;
+    height: 20px;
+  }
+  .footer-2 {
+    width: 50px;
+    height: 20px;
+  }
+  .footer-3 {
+    width: 40px;
+    height: 22px;
+  }
+  .footer-4 {
+    display: none;
+  }
+  .footer-right{
+    width: 100%;
+    text-align: start;
+    display: block;
+  }
+  .footer-line{
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .footer-right p {
+    font-size: 15px;
+  }
+  .watch-ad{
+    border-radius: 0;
+    width: 100px;
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+    background-color: transparent;
+    margin-left: 0px;
+  }
+  .footer-right:hover .watch-ad{
+    width: 100px;
+    margin-left: 0;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .footer-right:hover .watch{
+    font-size: 15px;
+  }
+
+  
+  .watch{
+    color: #0ba4db;
+    font-size: 15px;
+  }
+  .ad{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0ba4db;
+  }
+
+
+  /* second section */
+  .header-text2{
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+  .header-text2 h1 {
+    font-size: 30px;
+    line-height: 2.3rem;
+  }
+  .header-text2 p {
+    font-size: 17px;
+    line-height: 1.5rem;
+    margin-top: 10px;
+  }
+  .main-side{
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .main-text{
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+  .main-text h1{
+    font-size: 25px;
+    line-height: 2rem;
+  }
+  .main-text p{
+  font-size: 16px;
+  line-height: 1.5rem;
+  }
+  .main-list{
+    display: block;
+  }
+  .main-list ul{
+    line-height: 2.2rem;
+    margin: 0;
+  }
+  .main-list ul li{
+    font-size: 17px;
+  }
+
+  /* third section */
+  .trd-section{
+    padding-top: 2rem;
+  }
+  .main-image{
+    grid-row-start: 0;
+    grid-row-end: 1
+  }
+
+  /* fourth section */
+  .frt-section{
+    padding-top: 0;
+    padding-bottom: 2.2rem;
+  }
+  .frt-video{
+    display:none;
+  }
+  .frt-gap{
+    margin-top: 2rem;
+  }
+
+  /* fifth section */
+  .fth-grid{
+    margin-right: 1rem;
+  }
+  .fth-section{
+    padding-bottom: 4rem;
+  }
+
+  /* sxt-section */
+  
+  .excess2{
+    display: none !important;
+  }
+
+  /* seventh section */
+  .sth-section{
+    padding-bottom: 2rem;
+  }
+
+  /* eight-section */
+  .eth-section{
+    background-position: 0 -40px;
+  }
+  .eth-header{
+    display: block;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .header-btn2 {
+  margin: 0;
+  }
+
+  /* drop section */
+  .excess{
+    display: none;
+  }
+  .grided-side{
+    margin: 0;
+    display: block;
+  }
+  .drop{
+    cursor: pointer;
+  }
+  .drop h1{
+    width: 100%;
+    position: relative;
+  }
+  .drop h1 i{
+    display: block;
+    font-size: 10px;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    transform: rotate(-90deg);
+  }
+  .active-icon{
+    transform: rotate(0deg) !important;
+  }
+  .drop-content{
+    display: none;
+  }
+  .show-drop-content{
+    display: block;
+  }
+
+  /* contact section */
+  hr{
+    margin: 1.5rem 0.8rem;
+  }
+  .contact-section{
+    padding-bottom: 2rem;
+  }
+
+
+  /* nav stylings */
+  .nav-btn{
+    width: 94%;
+  }
+  .map-curve{
+    top: -350px;
+    left: 0;
+    width: 100%;
+  }
+  .ban{
+    font-size: 14px;
+  }
+  .ban span{
+    display: none;
+  }
+}
