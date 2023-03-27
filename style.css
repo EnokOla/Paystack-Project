@@ -77,6 +77,7 @@ nav .logo{
   display: flex;
   align-items: center;
   gap: 8px;
+  overflow-x: hidden;
 }
 .dropdown li i{
   font-size: 11px;
@@ -873,6 +874,7 @@ hr{
     background-color: rgba(241,254,244,0.95);
     display: none;
   }
+  
   .move-main-nav{
     right: 100%;
   }
@@ -1219,6 +1221,12 @@ hr{
   .excess2{
     display: none !important;
   }
+  .sponsors{
+    display: block;
+  }
+  .sponsors-images{
+    margin-bottom: 5%;
+  }
 
   /* seventh section */
   .sth-section{
@@ -1296,3 +1304,6 @@ hr{
     display: none;
   }
 }
+
+
+@media (max-width: 490px) {}
