@@ -30,6 +30,8 @@ const sideContent4 = document.querySelector(".side-content4")
 // scrool headers
 const banner = document.querySelector(".banner")
 const navBar = document.querySelector(".navbar")
+const major = document.querySelector(".major")
+const minor = document.querySelector(".minor")
 
 
 
@@ -124,40 +126,58 @@ window.addEventListener("scroll", function (params) {
     if (document.documentElement.scrollTop >= 820) {
         navBar.classList.add("white-nav-background")
         mainNav.classList.add("white-nav-background")
+        major.classList.add("white-nav-background")
+        minor.classList.add("white-nav-background")
     }
     else{
         navBar.classList.remove("white-nav-background")
         mainNav.classList.remove("white-nav-background")
+        major.classList.remove("white-nav-background")
+        minor.classList.remove("white-nav-background")
     }
 
     if (document.documentElement.scrollTop >= 3500) {
         navBar.classList.add("blue-nav-background")
         mainNav.classList.add("blue-nav-background")
+        major.classList.add("blue-nav-background")
+        minor.classList.add("blue-nav-background")
     }
     else{
         navBar.classList.remove("blue-nav-background")
         mainNav.classList.remove("blue-nav-background")
+        major.classList.remove("blue-nav-background")
+        minor.classList.remove("blue-nav-background")
     }
     if (document.documentElement.scrollTop >= 4400) {
         navBar.classList.remove("blue-nav-background")
         mainNav.classList.remove("blue-nav-background")
+        major.classList.remove("blue-nav-background")
+        minor.classList.remove("blue-nav-background")
     }
 
     if (document.documentElement.scrollTop >= 5010) {
         navBar.classList.add("off-white-nav-background")
         mainNav.classList.add("off-white-nav-background")
+        major.classList.add("off-white-nav-background")
+        minor.classList.add("off-white-nav-background")
     }
     else{
         navBar.classList.remove("off-white-nav-background")
         mainNav.classList.remove("off-white-nav-background")
+        major.classList.remove("off-white-nav-background")
+        minor.classList.remove("off-white-nav-background")
     }
 
     if (document.documentElement.scrollTop >= 5930) {
         navBar.classList.add("red-nav-background")
         mainNav.classList.add("red-nav-background")
+        major.classList.add("red-nav-background")
+        minor.classList.add("red-nav-background")
     }
     else{
         navBar.classList.remove("red-nav-background")
         mainNav.classList.remove("red-nav-background")
+        major.classList.remove("red-nav-background")
+        minor.classList.remove("red-nav-background")
     }
 }) 
