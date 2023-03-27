@@ -874,7 +874,7 @@ hr{
     background-color: rgba(241,254,244,0.95);
     display: none;
   }
-  
+
   .move-main-nav{
     right: 100%;
   }
@@ -1304,6 +1304,3 @@ hr{
     display: none;
   }
 }
-
-
-@media (max-width: 490px) {}
