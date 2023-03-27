@@ -30,7 +30,7 @@ const sideContent4 = document.querySelector(".side-content4");
 // scrool headers
 const banner = document.querySelector(".banner");
 const navBar = document.querySelector(".navbar");
-const maj1 = document.querySelectorAll(".maj1");
+// const maj1 = document.querySelectorAll(".maj1");
 // const min1 = document.querySelectorAll(".min1");
 // const maj2 = document.querySelectorAll(".maj2");
 // const min2 = document.querySelectorAll(".min2");
