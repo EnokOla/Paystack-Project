@@ -30,19 +30,19 @@ const sideContent4 = document.querySelector(".side-content4");
 // scrool headers
 const banner = document.querySelector(".banner");
 const navBar = document.querySelector(".navbar");
-// const maj1 = document.querySelectorAll(".maj1");
-// const min1 = document.querySelectorAll(".min1");
-// const maj2 = document.querySelectorAll(".maj2");
-// const min2 = document.querySelectorAll(".min2");
 
 // -----Navigations Toggle
 navToggle.addEventListener("click", function (params) {
   mainNav.classList.toggle("show-main-nav");
   navToggle.classList.toggle("nav-toggle-active");
+  sideContent1.style.left = "100%";
+  sideContent2.style.left = "100%";
+  sideContent3.style.left = "100%";
+  sideContent4.style.left = "100%";
+  console.log(sideContent1.style.left)
 });
 
 // Drop Toggle
-
 drops.forEach(function (span) {
   span.addEventListener("click", function (e) {
     const content = e.currentTarget.classList;
@@ -77,32 +77,28 @@ drops.forEach(function (span) {
 // Dropdown Toggle
 dropdown.forEach(function (start) {
   start.addEventListener("click", function (e) {
-    const side = e.currentTarget.classList;
-    if (side.contains("first-dropdown")) {
-      sideContent1.classList.add("show-side-content");
-    } else if (side.contains("second-dropdown")) {
-      sideContent2.classList.add("show-side-content");
-    } else if (side.contains("third-dropdown")) {
-      sideContent3.classList.add("show-side-content");
-    } else if (side.contains("fourth-dropdown")) {
-      sideContent4.classList.add("show-side-content");
+    const front = e.currentTarget.classList
+    if (front.contains("first-dropdown")) {
+      sideContent1.classList.toggle("show-side-content")
+      console.log( "add by" , sideContent1.style.left)
+      back[0].classList.toggle("show-back")
     }
-  });
-});
-
-back.forEach(function (end) {
-  end.addEventListener("click", function (e) {
-    const down = e.currentTarget.classList;
-    if (down.contains("backed-up1")) {
-      sideContent1.classList.add("remove-side-content");
-    } else if (down.contains("backed-up2")) {
-      sideContent2.classList.add("remove-side-content");
-    } else if (down.contains("backed-up3")) {
-      sideContent3.classList.add("remove-side-content");
-    } else if (down.contains("backed-up4")) {
-      sideContent4.classList.add("remove-side-content");
+    if (front.contains("second-dropdown")) {
+      sideContent2.classList.toggle("show-side-content")
+      console.log( "add by" , sideContent2.style.left)
+      back[1].classList.toggle("show-back")
     }
-  });
+    if (front.contains("third-dropdown")) {
+      sideContent3.classList.toggle("show-side-content")
+      console.log( "add by" , sideContent3.style.left)
+      back[2].classList.toggle("show-back")
+    }
+    if (front.contains("fourth-dropdown")) {
+      sideContent4.classList.toggle("show-side-content")
+      console.log( "add by" , sideContent4.style.left)
+      back[3].classList.toggle("show-back")
+    }
+  })
 });
 
 // Scroll Headers
@@ -116,72 +112,37 @@ window.addEventListener("scroll", function (params) {
   if (document.documentElement.scrollTop >= 820) {
     navBar.classList.add("white-nav-background");
     mainNav.classList.add("white-nav-background");
-    // maj1.classList.add("white-mobile-nav-background")
-    // min1.classList.add("white-m-nav-background")
-    // maj2.classList.add("white-m-nav-background")
-    // min2.classList.add("white-m-nav-background")
   } else {
     navBar.classList.remove("white-nav-background");
     mainNav.classList.remove("white-nav-background");
-    // maj1.classList.remove("white-mobile-nav-background")
-    // min1.classList.remove("white-m-nav-background")
-    // maj2.classList.remove("white-m-nav-background")
-    // min2.classList.remove("white-m-nav-background")
   }
 
   if (document.documentElement.scrollTop >= 3500) {
     navBar.classList.add("blue-nav-background");
     mainNav.classList.add("blue-nav-background");
-    // maj1.classList.add("blue-mobile-nav-background")
-    // min1.classList.add("blue-m-nav-background")
-    // maj2.classList.add("blue-m-nav-background")
-    // min2.classList.add("blue-m-nav-background")
   } else {
     navBar.classList.remove("blue-nav-background");
     mainNav.classList.remove("blue-nav-background");
-    // maj1.classList.remove("blue-mobile-nav-background")
-    // min1.classList.remove("blue-m-nav-background")
-    // maj2.classList.remove("blue-m-nav-background")
-    // min2.classList.remove("blue-m-nav-background")
   }
+
   if (document.documentElement.scrollTop >= 4400) {
     navBar.classList.remove("blue-nav-background");
     mainNav.classList.remove("blue-nav-background");
-    // maj1.classList.remove("blue-mobile-nav-background")
-    // min1.classList.remove("blue-m-nav-background")
-    // maj2.classList.remove("blue-m-nav-background")
-    // min2.classList.remove("blue-m-nav-background")
   }
 
   if (document.documentElement.scrollTop >= 5010) {
     navBar.classList.add("off-white-nav-background");
     mainNav.classList.add("off-white-nav-background");
-    // maj1.classList.add("off-white-mobile-nav-background")
-    // min1.classList.add("off-white-m-nav-background")
-    // maj2.classList.add("off-white-m-nav-background")
-    // min2.classList.add("off-white-m-nav-background")
   } else {
     navBar.classList.remove("off-white-nav-background");
     mainNav.classList.remove("off-white-nav-background");
-    // maj1.classList.remove("off-white-mobile-nav-background")
-    // min1.classList.remove("off-white-m-nav-background")
-    // maj2.classList.remove("off-white-m-nav-background")
-    // min2.classList.remove("off-white-m-nav-background")
   }
 
   if (document.documentElement.scrollTop >= 5930) {
     navBar.classList.add("red-nav-background");
     mainNav.classList.add("red-nav-background");
-    // maj1.classList.add("red-mobile-nav-background")
-    // min1.classList.add("red-m-nav-background")
-    // maj2.classList.add("red-m-nav-background")
-    // min2.classList.add("red-m-nav-background")
   } else {
     navBar.classList.remove("red-nav-background");
     mainNav.classList.remove("red-nav-background");
-    // maj1.classList.remove("red-mobile-nav-background")
-    // min1.classList.remove("red-m-nav-background")
-    // maj2.classList.remove("red-m-nav-background")
-    // min2.classList.remove("red-m-nav-background")
   }
 });

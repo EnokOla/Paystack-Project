@@ -109,7 +109,6 @@ nav .logo {
   top: 58px;
   height: 0;
   visibility: hidden;
-  /* display: none; */
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -812,6 +811,9 @@ hr {
   color: rgb(61, 94, 105);
   transition: 0.5s;
 }
+.dnone {
+  display: none;
+}
 .social-icons i:hover {
   color: #011b33;
 }
@@ -865,9 +867,6 @@ hr {
     background-color: white !important;
   }
 
-  .move-main-nav {
-    right: 100%;
-  }
   .show-main-nav {
     display: block;
   }
@@ -907,8 +906,6 @@ hr {
     transform: translateY(0px) !important;
     position: absolute;
     top: 0;
-    left: 100%;
-    height: 100vh;
     width: 100%;
     display: block;
     visibility: visible;
@@ -917,16 +914,20 @@ hr {
   .except {
     display: none;
   }
-  .remove-side-content {
+
+  .show-side-content{
+    left: 0 !important;
+  }
+  .remove-side-content{
     left: 100% !important;
   }
-  .show-side-content {
-    left: 0;
-  }
   .major {
+    margin-top: 3.2rem;
     width: 100%;
+    height: 80vh;
     display: block;
     box-shadow: none;
+    border-radius: 0;
   }
 
   .major-left {
@@ -957,19 +958,31 @@ hr {
     display: block;
     /* background-color: rgba(241, 254, 244, 0.95); */
     box-shadow: none;
+    border-radius: 0;
+    margin-top: 3.2rem;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
   }
   .minor ul {
     padding: 0 !important;
   }
   .back {
     cursor: pointer;
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    z-index: 1;
     display: block;
     padding: 1rem 0 0.8rem 1rem;
+    background-color: white;
     color: #55717b;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
+  }
+  .show-back{
+    left: 0%;
   }
   .back i {
     font-size: 12px;
